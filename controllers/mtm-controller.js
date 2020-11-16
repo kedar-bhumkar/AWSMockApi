@@ -5,7 +5,7 @@ const HttpError = require("../models/http-error");
 const Mtm = require("../models/mtm");
 
 const getTest = (req, res, next) => {
-  res.status(200).json({ Success: "getTest" });
+  res.status(200).json({ Success: "getTest call" });
 };
 
 const getActiveMTMcases = (req, res, next) => {
