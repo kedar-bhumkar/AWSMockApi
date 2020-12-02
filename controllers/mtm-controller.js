@@ -5,7 +5,12 @@ const HttpError = require("../models/http-error");
 const Mtm = require("../models/mtm");
 
 const getTest = (req, res, next) => {
+  console.log('Inside getTest');
+  var waitTill = new Date(new Date().getTime() + 10 * 1000);
+  while(waitTill > new Date()){}
+  console.log('After  getTest');
   res.status(200).json({ Success: "getTest call" });
+
 };
 
 const getActiveMTMcases = (req, res, next) => {
